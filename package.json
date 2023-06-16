@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "src/server.js",
   "scripts": {
     "build": "rm -rf build/ && tsc",
-    "start": "mode build/server.ts",
+    "start": "mode build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
