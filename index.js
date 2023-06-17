@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 app.get('/json', (req, res) => {
   res.json({ 'Choo Choo': 'Welcome to your Express app 🚅' })
 })
+const port = process.env.PORT || 9090
 
 const server = http.createServer(app)
 
@@ -73,8 +74,8 @@ const startServer = () => {
     res.status(404).json({ message: error.message })
   })
 
-  server.listen(config.server.port, () => {
-    Logging.info(`Server running on port ${config.server.port}`)
+  app.listen(port, () => {
+    Logging.info(`Example app listening on port ${port}`)
   })
   ;('use strict')
 }
